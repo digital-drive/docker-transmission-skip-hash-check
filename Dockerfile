@@ -24,9 +24,9 @@ RUN \
   patch && \
  mkdir /transmission-build && \
  cd /transmission-build && \
- curl https://cloud.github.com/downloads/libevent/libevent/libevent-2.0.18-stable.tar.gz -O && \
- tar xzf libevent-2.0.18-stable.tar.gz && \
- cd libevent-2.0.18-stable && \
+ curl https://github.com/libevent/libevent/releases/download/release-2.0.22-stable/libevent-2.0.22-stable.tar.gz -O && \
+ tar xzf libevent-2.0.22-stable.tar.gz && \
+ cd libevent-2.0.22-stable && \
  mkdir build && \
  cd build && \
  CFLAGS="-Os -march=native" ../configure && \
